@@ -46,10 +46,10 @@ func (app *application) createMovieHandler(w http.ResponseWriter, r *http.Reques
 	}
 
 	movie := &data.Movie{
-		Title: input.Title,
-		Year: input.Year,
+		Title:   input.Title,
+		Year:    input.Year,
 		Runtime: input.Runtime,
-		Genres: input.Genres,
+		Genres:  input.Genres,
 	}
 
 	v := validator.New()

@@ -81,7 +81,7 @@ func (app *application) readJSON(w http.ResponseWriter, r *http.Request, dst any
 
 		case errors.As(err, &invalidUnmarshalError):
 			panic(err)
-		
+
 		default:
 			return err
 		}
